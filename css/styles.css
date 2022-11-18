@@ -1,11 +1,8 @@
 .div_box {
     display: flex;
     /* flex를 정렬 속성을 가로 또는 세로로*/
-    flex-direction: column;
-    /* 가로 정렬*/
     justify-content:space-around;
     /* 세로 정렬*/
-    align-items: center;
     height: 100vh;
 }
 
@@ -15,4 +12,13 @@
     background: black;
     color: white;
     font-size: 30px;
+}
+
+.box:nth-child(2) {
+    align-self: center;
+    order: -1;
+}
+.box:nth-child(1) {
+    align-self: flex-end;
+    order: 1;
 }
