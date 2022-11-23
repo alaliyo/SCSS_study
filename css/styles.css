@@ -25,4 +25,5 @@
 .child:nth-child(3) {
     background: blue;
     flex-grow: 10;
+    width: 100px;
 }
