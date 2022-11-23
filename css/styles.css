@@ -1,15 +1,12 @@
-.div_box {
+.parents {
     display: flex;
     /* flex를 정렬 속성을 가로 또는 세로로*/
     justify-content:space-around;
     /* 세로 정렬*/
     height: 100vh;
-    align-content:flex-end;
-    flex-wrap: wrap-reverse;
-    flex-direction: row-reverse;
 }
 
-.box {
+.child {
     width: 200px;
     height: 200px;
     background: black;
@@ -18,4 +15,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.child:nth-child(2) {
+    background: red;
+    flex-grow: 3;
+}
+
+.child:nth-child(3) {
+    background: blue;
+    flex-grow: 10;
 }
