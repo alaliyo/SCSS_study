@@ -1,29 +1,30 @@
-.parents {
-    display: flex;
-    /* flex를 정렬 속성을 가로 또는 세로로*/
-    justify-content:space-around;
-    /* 세로 정렬*/
-    height: 100vh;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas: 
+        "header header header header"
+        "content content content nav"
+        "content content content nav"
+        "footer footer footer footer";
 }
 
-.child {
-    width: 200px;
-    height: 200px;
-    background: black;
-    color: white;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header {
+    background-color: #2ecc71;
+    grid-area: header;
 }
 
-.child:nth-child(2) {
-    background: red;
-    flex-grow: 3;
+.content {
+    background-color: #3498db;
+    grid-area: content;
 }
 
-.child:nth-child(3) {
-    background: blue;
-    flex-grow: 10;
-    width: 100px;
+.nav {
+    background-color: #8e44ad;
+    grid-area: nav;
+}
+
+.footer {
+    background-color: #f39c12;
+    grid-area: footer;
 }
