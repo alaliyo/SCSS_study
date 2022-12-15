@@ -1,40 +1,32 @@
 .grid {
     display: grid;
-<<<<<<< HEAD
+    gap: 5px;
     height: 70vh;
-    gap: 10px;
-    grid-template:
-    "header header header header" 1fr
-    "content content content nav" 2fr
-    "footer footer footer footer" 1fr
-    ;
-=======
-    grid-template-columns: repeat(4, 200px);
-    grid-template-rows: repeat(4, 200px);
-    grid-template-areas: 
-        "header header header header"
-        "content content content nav"
-        "content content content nav"
-        "footer footer footer footer";
->>>>>>> parent of f92c291 (2-4 Rows and Columns)
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    place-items: center end;
 }
 
 .header {
     background-color: #2ecc71;
-    grid-area: header;
+    height: 50px;
+    width: 50px;
 }
 
 .content {
     background-color: #3498db;
-    grid-area: content;
+    height: 50px;
+    width: 50px;
 }
 
 .nav {
     background-color: #8e44ad;
-    grid-area: nav;
+    height: 50px;
+    width: 50px;
 }
 
 .footer {
     background-color: #f39c12;
-    grid-area: footer;
+    height: 50px;
+    width: 50px;
 }
